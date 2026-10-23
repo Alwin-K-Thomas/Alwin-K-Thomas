@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 870 120" width="870" height="120" role="img" aria-labelledby="t d">
+<title id="t">How I lead</title>
+<desc id="d">Four principles: trade-off driven (cost, operations and risk made explicit); governance by design (built with Information Governance); owns the risk (security assurance); builds for the team (automation and mentoring).</desc>
+<style>
+  .tile rect.b{stroke:#1e293b;animation:hl 8s ease-in-out infinite}
+  @keyframes hl{0%,22%,100%{stroke:#1e293b}6%,16%{stroke:var(--c)}}
+  .tile .ic{animation:ic 8s ease-in-out infinite}
+  @keyframes ic{0%,22%,100%{opacity:.6}6%,16%{opacity:1}}
+  .t{font:700 13px -apple-system,'Segoe UI',Helvetica,Arial,sans-serif;fill:#e2e8f0}
+  .s{font:10.5px ui-monospace,Menlo,Consolas,monospace;fill:#94a3b8}
+  @media (prefers-reduced-motion:reduce){.tile rect.b,.tile .ic{animation:none}}
+</style>
+<rect width="870" height="120" rx="14" fill="#0b1020"/>
+
+<!-- 1 trade-offs -->
+<g class="tile" style="--c:#f5a524" transform="translate(14 14)">
+  <rect class="b" width="202" height="92" rx="10" fill="#0e1428" stroke-width="1.4"/>
+  <g class="ic" transform="translate(34 46)" fill="none" stroke="#f5a524" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <circle r="21" fill="#f5a524" fill-opacity=".1" stroke="none"/>
+    <path d="M0 -12 V12 M-8 12 H8 M-12 -7 H12"/><path d="M-12 -7 L-16 3 H-8 Z M12 -7 L8 3 H16 Z"/>
+  </g>
+  <text x="66" y="42" class="t">Trade-off driven</text>
+  <text x="66" y="62" class="s">Cost · Ops · Risk</text>
+</g>
+
+<!-- 2 governance -->
+<g class="tile" style="--c:#a78bfa" transform="translate(228 14)">
+  <rect class="b" width="202" height="92" rx="10" fill="#0e1428" stroke-width="1.4" style="animation-delay:2s"/>
+  <g class="ic" style="animation-delay:2s" transform="translate(34 46)" fill="none" stroke="#a78bfa" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <circle r="21" fill="#a78bfa" fill-opacity=".1" stroke="none"/>
+    <path d="M0 -13 L11 -8 V1 C11 8 6 12 0 14 C-6 12 -11 8 -11 1 V-8 Z"/><path d="M-5 0 l3.5 3.5 l6.5 -7"/>
+  </g>
+  <text x="66" y="42" class="t">Governance</text>
+  <text x="66" y="58" class="t">by design</text>
+  <text x="66" y="76" class="s">Built with IG</text>
+</g>
+
+<!-- 3 risk -->
+<g class="tile" style="--c:#ff4d6d" transform="translate(442 14)">
+  <rect class="b" width="202" height="92" rx="10" fill="#0e1428" stroke-width="1.4" style="animation-delay:4s"/>
+  <g class="ic" style="animation-delay:4s" transform="translate(34 46)" fill="none" stroke="#ff4d6d" stroke-width="1.8" stroke-linecap="round">
+    <circle r="21" fill="#ff4d6d" fill-opacity=".1" stroke="none"/>
+    <circle r="12"/><circle r="6.5"/><circle r="1.8" fill="#ff4d6d"/>
+  </g>
+  <text x="66" y="42" class="t">Owns the risk</text>
+  <text x="66" y="62" class="s">Security assurance</text>
+</g>
+
+<!-- 4 team -->
+<g class="tile" style="--c:#2dd4a7" transform="translate(656 14)">
+  <rect class="b" width="200" height="92" rx="10" fill="#0e1428" stroke-width="1.4" style="animation-delay:6s"/>
+  <g class="ic" style="animation-delay:6s" transform="translate(34 46)" fill="none" stroke="#2dd4a7" stroke-width="1.8" stroke-linecap="round">
+    <circle r="21" fill="#2dd4a7" fill-opacity=".1" stroke="none"/>
+    <circle cx="-5" cy="-5" r="4.5"/><path d="M-13 10 a8 7 0 0 1 16 0"/>
+    <circle cx="7" cy="-3" r="3.5"/><path d="M3 10 a6 6 0 0 1 11 -2"/>
+  </g>
+  <text x="66" y="42" class="t">Builds for</text>
+  <text x="66" y="58" class="t">the team</text>
+  <text x="66" y="76" class="s">Automate · Mentor</text>
+</g>
+</svg>

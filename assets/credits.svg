@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 870 300" width="870" height="300" role="img" aria-labelledby="t d">
+<title id="t">VFX filmography - MPC / Technicolor Creative Studios</title>
+<desc id="d">Rolling film credits: Aquaman (2018), Godzilla: King of the Monsters (2019), Pokémon Detective Pikachu (2019), Cats (2019), Dora and the Lost City of Gold (2019), RRR (2022), Mufasa: The Lion King (2024).</desc>
+<defs>
+  <pattern id="holes" width="28" height="22" patternUnits="userSpaceOnUse">
+    <rect x="7" y="5" width="14" height="11" rx="2.5" fill="#05070d"/>
+    <animateTransform attributeName="patternTransform" type="translate" from="0 0" to="-28 0" dur=".6s" repeatCount="indefinite"/>
+  </pattern>
+  <radialGradient id="vignette" cx="50%" cy="50%" r="65%">
+    <stop offset=".55" stop-color="#000" stop-opacity="0"/>
+    <stop offset="1" stop-color="#000" stop-opacity=".75"/>
+  </radialGradient>
+  <linearGradient id="fadeMask" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+    <stop offset=".22" stop-color="#fff" stop-opacity="1"/>
+    <stop offset=".78" stop-color="#fff" stop-opacity="1"/>
+    <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+  </linearGradient>
+  <mask id="fade"><rect x="0" y="44" width="870" height="212" fill="url(#fadeMask)"/></mask>
+  <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="3"><animate attributeName="seed" values="1;2;3;4;5;6" dur=".5s" repeatCount="indefinite"/></feTurbulence><feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .06 0"/></filter>
+  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#b8860b"/><stop offset=".5" stop-color="#fde68a"/><stop offset="1" stop-color="#b8860b"/>
+  </linearGradient>
+</defs>
+<style>
+  .roll{animation:roll 16s linear infinite}
+  @keyframes roll{from{transform:translateY(0)}to{transform:translateY(-504px)}}
+  .film{font-family:Georgia,'Times New Roman',serif;font-size:19px;letter-spacing:2px;fill:#f8fafc}
+  .year{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;letter-spacing:4px;fill:#f5a524}
+  .label{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11px;letter-spacing:3px;fill:#94a3b8}
+  .flicker{animation:flicker 4s steps(1) infinite}
+  @keyframes flicker{0%,100%{opacity:1}31%{opacity:.92}33%{opacity:1}71%{opacity:.95}}
+  @media (prefers-reduced-motion:reduce){.roll,.flicker{animation:none}}
+</style>
+
+<rect width="870" height="300" rx="14" fill="#0a0a0f"/>
+<!-- sprocket strips -->
+<rect x="0" y="0" width="870" height="22" rx="14" fill="#1a1a22"/><rect x="0" y="0" width="870" height="22" fill="url(#holes)"/>
+<rect x="0" y="278" width="870" height="22" rx="14" fill="#1a1a22"/><rect x="0" y="278" width="870" height="22" fill="url(#holes)"/>
+
+<g class="flicker">
+  <!-- left title card -->
+  <text x="40" y="78" class="label">FILMOGRAPHY</text>
+  <text x="40" y="118" font-family="Georgia,serif" font-size="30" fill="url(#gold)" letter-spacing="2">MPC</text>
+  <text x="40" y="142" class="label">TECHNICOLOR CREATIVE STUDIOS</text>
+  <line x1="40" y1="162" x2="320" y2="162" stroke="#f5a524" stroke-opacity=".5"/>
+  <text x="40" y="190" class="label">VFX PIPELINE SOFTWARE</text>
+  <text x="40" y="212" class="label">2017–2025</text>
+  <text x="40" y="244" class="label" fill="#64748b">ASSETS · REVIEW · MULTI-SITE</text>
+
+  <line x1="372" y1="56" x2="372" y2="244" stroke="#1e293b"/>
+
+  <!-- rolling credits (list duplicated for a seamless loop: 7 × 72px = 504px) -->
+  <g mask="url(#fade)">
+    <g class="roll">
+      <g id="list" text-anchor="middle">
+        <text x="621" y="92" class="year">2018</text><text x="621" y="120" class="film">AQUAMAN</text>
+        <text x="621" y="164" class="year">2019</text><text x="621" y="192" class="film">GODZILLA: KING OF THE MONSTERS</text>
+        <text x="621" y="236" class="year">2019</text><text x="621" y="264" class="film">POKÉMON DETECTIVE PIKACHU</text>
+        <text x="621" y="308" class="year">2019</text><text x="621" y="336" class="film">CATS</text>
+        <text x="621" y="380" class="year">2019</text><text x="621" y="408" class="film">DORA AND THE LOST CITY OF GOLD</text>
+        <text x="621" y="452" class="year">2022</text><text x="621" y="480" class="film">RRR</text>
+        <text x="621" y="524" class="year">2024</text><text x="621" y="552" class="film">MUFASA: THE LION KING</text>
+      </g>
+      <use href="#list" y="504"/>
+    </g>
+  </g>
+</g>
+
+<rect width="870" height="300" rx="14" fill="url(#vignette)" pointer-events="none"/>
+<rect width="870" height="300" rx="14" filter="url(#grain)" pointer-events="none"/>
+</svg>

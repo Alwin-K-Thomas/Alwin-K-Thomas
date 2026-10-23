@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 870 380" width="870" height="380" role="img" aria-labelledby="t d">
+<title id="t">The platform, layer by layer</title>
+<desc id="d">Isometric stack, bottom to top: infrastructure (Azure and on-prem, Terraform, observability); Kubernetes platform (multi-cluster, operators and CRDs, GitOps); zero-trust security (identity federation, RBAC, policy-as-code); AI infrastructure (GPU compute, LLM serving, ML workloads); trusted research environment (Five Safes, isolated research projects).</desc>
+<defs>
+  <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#1e2a4a"/></pattern>
+  <linearGradient id="beam" x1="0" y1="1" x2="0" y2="0">
+    <stop offset="0" stop-color="#4f8ff7" stop-opacity="0"/><stop offset=".5" stop-color="#4f8ff7" stop-opacity=".35"/><stop offset="1" stop-color="#2dd4a7" stop-opacity="0"/>
+  </linearGradient>
+  <filter id="glow" x="-200%" y="-200%" width="500%" height="500%"><feGaussianBlur stdDeviation="4"/></filter>
+</defs>
+<style>
+  .title{font:700 12.5px ui-monospace,Menlo,Consolas,monospace;letter-spacing:1.5px}
+  .tags{font:11px ui-monospace,Menlo,Consolas,monospace;fill:#94a3b8}
+  .head{font:11px ui-monospace,Menlo,Consolas,monospace;letter-spacing:3px;fill:#64748b}
+  .layer{opacity:0;animation:rise .7s cubic-bezier(.2,.8,.2,1) forwards}
+  @keyframes rise{from{opacity:0;transform:translateY(-26px)}to{opacity:1;transform:none}}
+  .tile{animation:tile 3.3s steps(1) infinite}
+  @keyframes tile{0%,100%{opacity:1}50%{opacity:.3}}
+  .flash{opacity:0;animation:flash 3.2s linear infinite}
+  @keyframes flash{0%{opacity:.9}12%{opacity:0}100%{opacity:0}}
+  .flashText{fill:#ffffff;opacity:0;animation:flash 3.2s linear infinite}
+  @media (prefers-reduced-motion:reduce){.layer{animation:none;opacity:1}.tile,.flash,.flashText{animation:none}}
+</style>
+<rect width="870" height="380" rx="14" fill="#0b1020"/>
+<rect width="870" height="380" rx="14" fill="url(#dots)"/>
+<rect x=".5" y=".5" width="869" height="379" rx="14" fill="none" stroke="#1e293b"/>
+<text x="466" y="34" class="head">THE PLATFORM · LAYER BY LAYER</text>
+<rect x="238" y="22" width="4" height="348" fill="url(#beam)"/>
+<g class="layer" style="animation-delay:0.00s">
+  <polygon points="90,308 240,346 240,360 90,322" fill="#f5a524" fill-opacity=".38"/>
+  <polygon points="240,346 390,308 390,322 240,360" fill="#f5a524" fill-opacity=".22"/>
+  <polygon points="240,270 390,308 240,346 90,308" fill="#0d1530" stroke="#f5a524" stroke-width="1.4"/>
+  <polygon points="240,270 390,308 240,346 90,308" fill="#f5a524" fill-opacity=".12"/>
+  <polygon points="240.0,282.9 261.0,288.2 240.0,293.5 219.0,288.2" fill="#f5a524" fill-opacity=".55" class="tile" style="animation-delay:2.00s"/><polygon points="279.1,292.8 300.1,298.1 279.1,303.4 258.1,298.1" fill="#f5a524" fill-opacity=".55" class="tile" style="animation-delay:2.37s"/><polygon points="318.1,302.7 339.1,308.0 318.1,313.3 297.1,308.0" fill="#f5a524" fill-opacity=".55" class="tile" style="animation-delay:2.74s"/><polygon points="200.9,292.8 221.9,298.1 200.9,303.4 179.9,298.1" fill="#f5a524" fill-opacity=".55" class="tile" style="animation-delay:3.11s"/><polygon points="240.0,302.7 261.0,308.0 240.0,313.3 219.0,308.0" fill="#f5a524" fill-opacity=".55" class="tile" style="animation-delay:3.48s"/><polygon points="279.1,312.6 300.1,317.9 279.1,323.2 258.1,317.9" fill="#f5a524" fill-opacity=".55" class="tile" style="animation-delay:3.85s"/><polygon points="161.9,302.7 182.9,308.0 161.9,313.3 140.9,308.0" fill="#f5a524" fill-opacity=".55" class="tile" style="animation-delay:4.22s"/><polygon points="200.9,312.6 221.9,317.9 200.9,323.2 179.9,317.9" fill="#f5a524" fill-opacity=".55" class="tile" style="animation-delay:4.59s"/><polygon points="240.0,322.5 261.0,327.8 240.0,333.1 219.0,327.8" fill="#f5a524" fill-opacity=".55" class="tile" style="animation-delay:4.96s"/>
+  <polygon points="240,270 390,308 240,346 90,308" fill="none" stroke="#ffffff" stroke-width="2" class="flash" style="animation-delay:2.27s"/>
+</g><g class="layer" style="animation-delay:0.22s">
+  <polygon points="90,250 240,288 240,302 90,264" fill="#4f8ff7" fill-opacity=".38"/>
+  <polygon points="240,288 390,250 390,264 240,302" fill="#4f8ff7" fill-opacity=".22"/>
+  <polygon points="240,212 390,250 240,288 90,250" fill="#0d1530" stroke="#4f8ff7" stroke-width="1.4"/>
+  <polygon points="240,212 390,250 240,288 90,250" fill="#4f8ff7" fill-opacity=".12"/>
+  <polygon points="240.0,224.9 261.0,230.2 240.0,235.5 219.0,230.2" fill="#4f8ff7" fill-opacity=".55" class="tile" style="animation-delay:1.50s"/><polygon points="279.1,234.8 300.1,240.1 279.1,245.4 258.1,240.1" fill="#4f8ff7" fill-opacity=".55" class="tile" style="animation-delay:1.87s"/><polygon points="318.1,244.7 339.1,250.0 318.1,255.3 297.1,250.0" fill="#4f8ff7" fill-opacity=".55" class="tile" style="animation-delay:2.24s"/><polygon points="200.9,234.8 221.9,240.1 200.9,245.4 179.9,240.1" fill="#4f8ff7" fill-opacity=".55" class="tile" style="animation-delay:2.61s"/><polygon points="240.0,244.7 261.0,250.0 240.0,255.3 219.0,250.0" fill="#4f8ff7" fill-opacity=".55" class="tile" style="animation-delay:2.98s"/><polygon points="279.1,254.6 300.1,259.9 279.1,265.2 258.1,259.9" fill="#4f8ff7" fill-opacity=".55" class="tile" style="animation-delay:3.35s"/><polygon points="161.9,244.7 182.9,250.0 161.9,255.3 140.9,250.0" fill="#4f8ff7" fill-opacity=".55" class="tile" style="animation-delay:3.72s"/><polygon points="200.9,254.6 221.9,259.9 200.9,265.2 179.9,259.9" fill="#4f8ff7" fill-opacity=".55" class="tile" style="animation-delay:4.09s"/><polygon points="240.0,264.5 261.0,269.8 240.0,275.1 219.0,269.8" fill="#4f8ff7" fill-opacity=".55" class="tile" style="animation-delay:4.46s"/>
+  <polygon points="240,212 390,250 240,288 90,250" fill="none" stroke="#ffffff" stroke-width="2" class="flash" style="animation-delay:2.80s"/>
+</g><g class="layer" style="animation-delay:0.44s">
+  <polygon points="90,192 240,230 240,244 90,206" fill="#a78bfa" fill-opacity=".38"/>
+  <polygon points="240,230 390,192 390,206 240,244" fill="#a78bfa" fill-opacity=".22"/>
+  <polygon points="240,154 390,192 240,230 90,192" fill="#0d1530" stroke="#a78bfa" stroke-width="1.4"/>
+  <polygon points="240,154 390,192 240,230 90,192" fill="#a78bfa" fill-opacity=".12"/>
+  <polygon points="240.0,166.9 261.0,172.2 240.0,177.5 219.0,172.2" fill="#a78bfa" fill-opacity=".55" class="tile" style="animation-delay:1.00s"/><polygon points="279.1,176.8 300.1,182.1 279.1,187.4 258.1,182.1" fill="#a78bfa" fill-opacity=".55" class="tile" style="animation-delay:1.37s"/><polygon points="318.1,186.7 339.1,192.0 318.1,197.3 297.1,192.0" fill="#a78bfa" fill-opacity=".55" class="tile" style="animation-delay:1.74s"/><polygon points="200.9,176.8 221.9,182.1 200.9,187.4 179.9,182.1" fill="#a78bfa" fill-opacity=".55" class="tile" style="animation-delay:2.11s"/><polygon points="240.0,186.7 261.0,192.0 240.0,197.3 219.0,192.0" fill="#a78bfa" fill-opacity=".55" class="tile" style="animation-delay:2.48s"/><polygon points="279.1,196.6 300.1,201.9 279.1,207.2 258.1,201.9" fill="#a78bfa" fill-opacity=".55" class="tile" style="animation-delay:2.85s"/><polygon points="161.9,186.7 182.9,192.0 161.9,197.3 140.9,192.0" fill="#a78bfa" fill-opacity=".55" class="tile" style="animation-delay:3.22s"/><polygon points="200.9,196.6 221.9,201.9 200.9,207.2 179.9,201.9" fill="#a78bfa" fill-opacity=".55" class="tile" style="animation-delay:3.59s"/><polygon points="240.0,206.5 261.0,211.8 240.0,217.1 219.0,211.8" fill="#a78bfa" fill-opacity=".55" class="tile" style="animation-delay:3.96s"/>
+  <polygon points="240,154 390,192 240,230 90,192" fill="none" stroke="#ffffff" stroke-width="2" class="flash" style="animation-delay:3.34s"/>
+</g><g class="layer" style="animation-delay:0.66s">
+  <polygon points="90,134 240,172 240,186 90,148" fill="#76b900" fill-opacity=".38"/>
+  <polygon points="240,172 390,134 390,148 240,186" fill="#76b900" fill-opacity=".22"/>
+  <polygon points="240,96 390,134 240,172 90,134" fill="#0d1530" stroke="#76b900" stroke-width="1.4"/>
+  <polygon points="240,96 390,134 240,172 90,134" fill="#76b900" fill-opacity=".12"/>
+  <polygon points="240.0,108.9 261.0,114.2 240.0,119.5 219.0,114.2" fill="#76b900" fill-opacity=".55" class="tile" style="animation-delay:0.50s"/><polygon points="279.1,118.8 300.1,124.1 279.1,129.4 258.1,124.1" fill="#76b900" fill-opacity=".55" class="tile" style="animation-delay:0.87s"/><polygon points="318.1,128.7 339.1,134.0 318.1,139.3 297.1,134.0" fill="#76b900" fill-opacity=".55" class="tile" style="animation-delay:1.24s"/><polygon points="200.9,118.8 221.9,124.1 200.9,129.4 179.9,124.1" fill="#76b900" fill-opacity=".55" class="tile" style="animation-delay:1.61s"/><polygon points="240.0,128.7 261.0,134.0 240.0,139.3 219.0,134.0" fill="#76b900" fill-opacity=".55" class="tile" style="animation-delay:1.98s"/><polygon points="279.1,138.6 300.1,143.9 279.1,149.2 258.1,143.9" fill="#76b900" fill-opacity=".55" class="tile" style="animation-delay:2.35s"/><polygon points="161.9,128.7 182.9,134.0 161.9,139.3 140.9,134.0" fill="#76b900" fill-opacity=".55" class="tile" style="animation-delay:2.72s"/><polygon points="200.9,138.6 221.9,143.9 200.9,149.2 179.9,143.9" fill="#76b900" fill-opacity=".55" class="tile" style="animation-delay:3.09s"/><polygon points="240.0,148.5 261.0,153.8 240.0,159.1 219.0,153.8" fill="#76b900" fill-opacity=".55" class="tile" style="animation-delay:3.46s"/>
+  <polygon points="240,96 390,134 240,172 90,134" fill="none" stroke="#ffffff" stroke-width="2" class="flash" style="animation-delay:3.87s"/>
+</g><g class="layer" style="animation-delay:0.88s">
+  <polygon points="90,76 240,114 240,128 90,90" fill="#2dd4a7" fill-opacity=".38"/>
+  <polygon points="240,114 390,76 390,90 240,128" fill="#2dd4a7" fill-opacity=".22"/>
+  <polygon points="240,38 390,76 240,114 90,76" fill="#0d1530" stroke="#2dd4a7" stroke-width="1.4"/>
+  <polygon points="240,38 390,76 240,114 90,76" fill="#2dd4a7" fill-opacity=".12"/>
+  <polygon points="240.0,50.9 261.0,56.2 240.0,61.5 219.0,56.2" fill="#2dd4a7" fill-opacity=".55" class="tile" style="animation-delay:0.00s"/><polygon points="279.1,60.8 300.1,66.1 279.1,71.4 258.1,66.1" fill="#2dd4a7" fill-opacity=".55" class="tile" style="animation-delay:0.37s"/><polygon points="318.1,70.7 339.1,76.0 318.1,81.3 297.1,76.0" fill="#2dd4a7" fill-opacity=".55" class="tile" style="animation-delay:0.74s"/><polygon points="200.9,60.8 221.9,66.1 200.9,71.4 179.9,66.1" fill="#2dd4a7" fill-opacity=".55" class="tile" style="animation-delay:1.11s"/><polygon points="240.0,70.7 261.0,76.0 240.0,81.3 219.0,76.0" fill="#2dd4a7" fill-opacity=".55" class="tile" style="animation-delay:1.48s"/><polygon points="279.1,80.6 300.1,85.9 279.1,91.2 258.1,85.9" fill="#2dd4a7" fill-opacity=".55" class="tile" style="animation-delay:1.85s"/><polygon points="161.9,70.7 182.9,76.0 161.9,81.3 140.9,76.0" fill="#2dd4a7" fill-opacity=".55" class="tile" style="animation-delay:2.22s"/><polygon points="200.9,80.6 221.9,85.9 200.9,91.2 179.9,85.9" fill="#2dd4a7" fill-opacity=".55" class="tile" style="animation-delay:2.59s"/><polygon points="240.0,90.5 261.0,95.8 240.0,101.1 219.0,95.8" fill="#2dd4a7" fill-opacity=".55" class="tile" style="animation-delay:2.96s"/>
+  <polygon points="240,38 390,76 240,114 90,76" fill="none" stroke="#ffffff" stroke-width="2" class="flash" style="animation-delay:4.40s"/>
+</g>
+<g>
+  <circle r="9" fill="#7dd3fc" filter="url(#glow)" opacity=".9"/>
+  <circle r="3.5" fill="#ffffff"/>
+  <animateMotion path="M240 370 V 22" dur="3.2s" begin="1.7s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.1;.85;1" dur="3.2s" begin="1.7s" repeatCount="indefinite"/>
+  <set attributeName="opacity" to="0" begin="0s"/>
+</g>
+<g class="layer" style="animation-delay:1.03s">
+  <line x1="398" y1="76" x2="452" y2="76" stroke="#2dd4a7" stroke-opacity=".5" stroke-dasharray="2 4"/>
+  <circle cx="452" cy="76" r="3" fill="#2dd4a7"/>
+  <text x="466" y="73" class="title" fill="#2dd4a7">TRUSTED RESEARCH ENVIRONMENT</text>
+  <text x="466" y="90" class="tags">Five Safes · Isolated research projects</text>
+  <text x="466" y="73" class="title flashText" style="animation-delay:4.40s">TRUSTED RESEARCH ENVIRONMENT</text>
+</g><g class="layer" style="animation-delay:0.81s">
+  <line x1="398" y1="134" x2="452" y2="134" stroke="#76b900" stroke-opacity=".5" stroke-dasharray="2 4"/>
+  <circle cx="452" cy="134" r="3" fill="#76b900"/>
+  <text x="466" y="131" class="title" fill="#76b900">AI INFRASTRUCTURE</text>
+  <text x="466" y="148" class="tags">GPU compute · LLM serving · ML workloads</text>
+  <text x="466" y="131" class="title flashText" style="animation-delay:3.87s">AI INFRASTRUCTURE</text>
+</g><g class="layer" style="animation-delay:0.59s">
+  <line x1="398" y1="192" x2="452" y2="192" stroke="#a78bfa" stroke-opacity=".5" stroke-dasharray="2 4"/>
+  <circle cx="452" cy="192" r="3" fill="#a78bfa"/>
+  <text x="466" y="189" class="title" fill="#a78bfa">ZERO-TRUST SECURITY</text>
+  <text x="466" y="206" class="tags">Identity federation · RBAC · Policy-as-code</text>
+  <text x="466" y="189" class="title flashText" style="animation-delay:3.34s">ZERO-TRUST SECURITY</text>
+</g><g class="layer" style="animation-delay:0.37s">
+  <line x1="398" y1="250" x2="452" y2="250" stroke="#4f8ff7" stroke-opacity=".5" stroke-dasharray="2 4"/>
+  <circle cx="452" cy="250" r="3" fill="#4f8ff7"/>
+  <text x="466" y="247" class="title" fill="#4f8ff7">KUBERNETES PLATFORM</text>
+  <text x="466" y="264" class="tags">Multi-cluster · Operators &amp; CRDs · GitOps</text>
+  <text x="466" y="247" class="title flashText" style="animation-delay:2.80s">KUBERNETES PLATFORM</text>
+</g><g class="layer" style="animation-delay:0.15s">
+  <line x1="398" y1="308" x2="452" y2="308" stroke="#f5a524" stroke-opacity=".5" stroke-dasharray="2 4"/>
+  <circle cx="452" cy="308" r="3" fill="#f5a524"/>
+  <text x="466" y="305" class="title" fill="#f5a524">INFRASTRUCTURE</text>
+  <text x="466" y="322" class="tags">Azure + on-prem · Terraform · Observability</text>
+  <text x="466" y="305" class="title flashText" style="animation-delay:2.27s">INFRASTRUCTURE</text>
+</g>
+</svg>
